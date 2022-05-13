@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #1ed760;
+  --violet: #993399;
+  --blue:  #2941ab;
+}
+
+body {
+  font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+}
+
+header { 
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 50px;
+  margin-left: 7rem;
+}
+
+nav {
+  font-size: 16px;
+  font-weight: 600;
+}
+nav a {
+  padding: 7px 13px;
+  cursor: pointer;
+  color: #ffff;
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--green);
+}
+.bar {
+  text-decoration: none;
+  cursor: none;
+}
+
+.banner_violet {
+  background-color: var(--violet);
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.banner--right {
+  color: #ffff;
+  padding-left: 10rem;
+}
+
+.banner--right h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.banner--right h1 {
+  font-weight: 600;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.banner--right p {
+ font-size: 25px;
+ margin-bottom: 50px;
+}
+
+#termos {
+  color: #ffff;
+}
+
+.button_black {
+   background-color: #000;
+   border-radius:100px;
+   color: #ffff;
+   cursor: pointer;
+   padding: 14px 20px;
+   margin-top: 30px;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 600;
+   width: 20rem;
+   text-decoration: none;
+}
+
+
+.banner--left img {
+  width: 400px;
+  height: 400px;
+  margin-right: 5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+footer {
+  margin-top: 60px;
+  font-size: 12px;
+}
+
+.banner_blue {
+  background-color: var(--blue);
+  height: 100%;
+  background-image: url(../images/bg.png);
+}
+
+.green_text {
+  color: #1ed760;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+}
+.green_text h5 {
+   text-transform: uppercase;
+   font-weight: 600;
+ }
+.green_text h1 {
+   font-weight: 600;
+   font-size: 50px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.green_text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.button_green {
+    background-color: var(--green);
+    border-radius:100px;
+    color: var(--blue);
+    cursor: pointer;
+    padding: 14px 20px;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 20rem;
+    text-decoration: none;
+}
+
+.button_green:hover {
+  transform: scale(1.1);
+  transition: all .3s;
+}
+
+@media(max-width: 768px) {
+  header {
+    padding: 30px;
+    height: 60px;
+  }
+  .logo img {
+    width: 89px;
+    height: 28.25px;
+    margin-left: 0;
+  }
+  nav {
+    display: none;
+  }
+  nav a {
+    font-size: 12px;
+  }
+
+  .banner_violet, .banner_blue {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .banner--right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    font-size: 12px;
+  }
+  .banner_violet h5 {
+    margin-top: 30px;
+  }
+  .banner_violet .banner--right h1, p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .banner_violet .button_black {
+    width: 290px;
+    height: 48px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .banner_violet footer {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 9px;
+  }
+
+  .banner--left img {
+    width: 290px;
+    height: 290px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .banner_blue .green_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .green_text h5, h1, p, footer {
+    text-align: center;
+  }
+
+  .green_text h1 {
+    font-size: 35px;
+  }
+
+  .banner_blue .button_green {
+    width: 290px;
+    height: 48px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  } 
+}
+
+@media(min-width: 768px) {
+  nav {
+    display: block;
+  }
+  
+  header {
+    padding: 30px;
+    height: 60px;
+  }
+}
+
