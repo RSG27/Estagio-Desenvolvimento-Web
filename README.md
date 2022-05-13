@@ -104,7 +104,7 @@ O candidato deve criar a página da imagem a seguir:
 ![Layout](https://i.ibb.co/Bydq2FZ/screencapture-spotify-br-2022-05-10-15-13-17.png)
 
 Link da Solução:
-![clique aqui](https://animated-baklava-68d0f4.netlify.app/)
+[clique aqui](https://animated-baklava-68d0f4.netlify.app/)
 
 Algumas observações importantes:
 - Fazer a página responsiva não é obrigatório, mas a apresentação dos elementos deve ser o mais próximo possível da imagem.
