@@ -52,6 +52,7 @@ O teste é baseado em questionamentos e problemas a serem resolvidos.
     R: Por meio de propriedades como o Transition e o Animation com Keyframes, por exemplo. Como podemos ver a seguir com quadrados que após determinado tempo, assumem uma dada posição na página:
 
     HTML:
+    
     div class="squares"
 
     CSS:
