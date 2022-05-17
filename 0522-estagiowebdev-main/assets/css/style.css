@@ -5,9 +5,9 @@
 }
 
 :root {
-  --green: #1ed760;
-  --violet: #993399;
-  --blue:  #2941ab;
+  --font-color: #1ed760;
+  --bg-color: #993399;
+  --bg-color2:  #2941ab;
 }
 
 body {
@@ -42,15 +42,14 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: var(--green);
+  color: var(--font-color);
 }
 .bar {
-  text-decoration: none;
-  cursor: none;
+  color: #ffff;
 }
 
 .banner_violet {
-  background-color: var(--violet);
+  background-color: var(--bg-color);
   box-sizing: border-box;
   height: 100vh;
   display: flex;
@@ -111,13 +110,13 @@ footer {
 }
 
 .banner_blue {
-  background-color: var(--blue);
+  background-color: var(--bg-color2);
   height: 100%;
   background-image: url(../images/bg.png);
 }
 
 .green_text {
-  color: #1ed760;
+  color: var(--font-color);
   display: flex;
   flex-direction: column;
   padding: 10rem;
@@ -139,9 +138,9 @@ footer {
 }
 
 .button_green {
-    background-color: var(--green);
+    background-color: var(--font-color);
     border-radius:100px;
-    color: var(--blue);
+    color: var(--bg-color2);
     cursor: pointer;
     padding: 14px 20px;
     margin-top: 30px;
@@ -156,6 +155,9 @@ footer {
   transform: scale(1.1);
   transition: all .3s;
 }
+
+
+
 
 @media(max-width: 768px) {
   header {

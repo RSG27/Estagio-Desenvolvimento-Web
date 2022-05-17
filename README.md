@@ -11,7 +11,9 @@ O teste é baseado em questionamentos e problemas a serem resolvidos.
 
 2. Quando uma página é criada, ela automaticamente se adapta a todos os tipos de tela? Por que?
 
-    R: Não, para isso temos de usar um layout responsivo, ou seja, o site deve ser estruturado para se enquadrar ao tamanho de um determinado dispositivo. Por isso, é importante observar os breakpoints, que são aqueles pontos de "quebra de página" e usar media queries, para determinar a posição dos elementos da nossa página nesses dispositivos.
+    R: Sim, para isso temos de usar um layout responsivo, ou seja, o site deve ser estruturado para se enquadrar ao tamanho de um determinado dispositivo. Por isso, é importante observar os breakpoints, que são aqueles pontos de "quebra de página" e usar media queries, para determinar a posição dos elementos da nossa página nesses dispositivos.
+
+    Correção: Sim, o HTML é naturalmente responsivo, só que a maioria dos layouts que nós criamos vão contra essa responsividade natural do HTML (ele só cria layouts de uma coluna e texto corrido), e por isso que geralmente temos que readaptar o site para ele voltar a ser responsivo;
 
 3. O código HTML e CSS é renderizado no servidor e repassado para o navegador em forma de imagem?
 
@@ -29,6 +31,8 @@ O teste é baseado em questionamentos e problemas a serem resolvidos.
 
     fonte: https://webdevacademy.com.br/artigos/como-funcionam-comunicacoes-web/
 
+    Correção: Ele não é enviado na forma de imagem, ele é enviado na forma de um documento HTML, se fosse uma imagem você não ia conseguir selecionar os textos por exemplo;
+
 4. Qual a função das tags H (h1, h2, h3, etc) no HTML?
 
     R: Destacar títulos e subtítulos de uma página. As chamadas Heading Tags são usadas na hierarquização e estruturação de uma página.
@@ -43,9 +47,13 @@ O teste é baseado em questionamentos e problemas a serem resolvidos.
 
     R: Sim, pois é através dele que vamos delimitar o layout responsivo do site aos diferentes dispositivos.
 
+    Correção: Não, não é obrigatório, um layout de um blog simples por exemplo, onde você só tem o título do blog e um grid com os cards pode ser feito de forma totalmente responsiva sem o uso de nenhuma media query, ainda no exemplo do blog, o layout do artigo pode ser feito sem nenhuma media query uma vez que ele seria só o título e o texto por exemplo;
+
 7. Qual a diferença entre CSS Inline e CSS em um arquivo?
 
-    R: O CSS inline é aplicado em uma tag específica do HTML que queremos estilizar, para isso é preciso que usemos o atributo (style=" ") no elemento em questão. Já o CSS externo, é aquele em que linkamos as páginas com um "style.css" no head do site após o title: "<link rel="stylesheet" type="text/css" href="style.css" />".
+    R: O CSS inline é aplicado em uma tag específica do HTML que queremos estilizar, para isso é preciso que usemos o atributo (style=" ") no elemento em questão. Já o CSS externo, é aquele em que linkamos as páginas com um "style.css" no head do site e após o title: "<link rel="stylesheet" type="text/css" href="style.css" />".
+
+    Correção: A tag link pode ser incluída tanto antes quanto após o title.
 
 8. Como criar animações no CSS? Dê um exemplo.
 
