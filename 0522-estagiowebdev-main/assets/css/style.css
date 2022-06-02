@@ -66,7 +66,7 @@ header {
 .banner_violet {
   background-color: var(--bg-color);
   box-sizing: border-box;
-  height: 100vh;
+  height: 170vh;
   display: flex;
   align-items: center;
 }
